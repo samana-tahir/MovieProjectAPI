@@ -15,5 +15,7 @@ FOUNDATION_EXPORT double MovieProjectAPIVersionNumber;
 FOUNDATION_EXPORT const unsigned char MovieProjectAPIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MovieProjectAPI/PublicHeader.h>
-
+#import<MovieProjectAPI/MovieDataFetcherList.h>
+#import<MovieProjectAPI/MovieMetaData.h>
+#import<MovieProjectAPI/MovieConstants.h>
 

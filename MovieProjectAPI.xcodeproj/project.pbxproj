@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		74B9DD83212A794C00B79B15 /* MovieProjectAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9DD79212A794C00B79B15 /* MovieProjectAPI.framework */; };
 		74B9DD88212A794C00B79B15 /* MovieProjectAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD87212A794C00B79B15 /* MovieProjectAPITests.m */; };
-		74B9DD8A212A794C00B79B15 /* MovieProjectAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9DD7C212A794C00B79B15 /* MovieProjectAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74B9DD8A212A794C00B79B15 /* MovieProjectAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9DD7C212A794C00B79B15 /* MovieProjectAPI.h */; };
+		74B9DDA1212A7C3E00B79B15 /* MovieDataFetcherList.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD9D212A7C3E00B79B15 /* MovieDataFetcherList.m */; };
+		74B9DDA2212A7C3E00B79B15 /* MovieMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD9E212A7C3E00B79B15 /* MovieMetaData.m */; };
+		74B9DDA3212A7C3E00B79B15 /* MovieMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9DD9F212A7C3E00B79B15 /* MovieMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74B9DDA4212A7C3E00B79B15 /* MovieDataFetcherList.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9DDA0212A7C3E00B79B15 /* MovieDataFetcherList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74B9DDA5212A84EC00B79B15 /* MovieConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B9DD9C212A7B7E00B79B15 /* MovieConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74B9DDAC212A875700B79B15 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 74B9DDAA212A875600B79B15 /* include */; };
+		74B9DDAD212A875700B79B15 /* libSortingAlgo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9DDAB212A875700B79B15 /* libSortingAlgo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		74B9DD82212A794C00B79B15 /* MovieProjectAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieProjectAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9DD87212A794C00B79B15 /* MovieProjectAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieProjectAPITests.m; sourceTree = "<group>"; };
 		74B9DD89212A794C00B79B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B9DD9C212A7B7E00B79B15 /* MovieConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieConstants.h; sourceTree = "<group>"; };
+		74B9DD9D212A7C3E00B79B15 /* MovieDataFetcherList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDataFetcherList.m; sourceTree = "<group>"; };
+		74B9DD9E212A7C3E00B79B15 /* MovieMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieMetaData.m; sourceTree = "<group>"; };
+		74B9DD9F212A7C3E00B79B15 /* MovieMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieMetaData.h; sourceTree = "<group>"; };
+		74B9DDA0212A7C3E00B79B15 /* MovieDataFetcherList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDataFetcherList.h; sourceTree = "<group>"; };
+		74B9DDAA212A875600B79B15 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		74B9DDAB212A875700B79B15 /* libSortingAlgo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSortingAlgo.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9DDAD212A875700B79B15 /* libSortingAlgo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +68,7 @@
 		74B9DD6F212A794C00B79B15 = {
 			isa = PBXGroup;
 			children = (
+				74B9DD93212A799200B79B15 /* SortingStaticLib */,
 				74B9DD7B212A794C00B79B15 /* MovieProjectAPI */,
 				74B9DD86212A794C00B79B15 /* MovieProjectAPITests */,
 				74B9DD7A212A794C00B79B15 /* Products */,
@@ -71,7 +87,12 @@
 		74B9DD7B212A794C00B79B15 /* MovieProjectAPI */ = {
 			isa = PBXGroup;
 			children = (
+				74B9DD9C212A7B7E00B79B15 /* MovieConstants.h */,
 				74B9DD7C212A794C00B79B15 /* MovieProjectAPI.h */,
+				74B9DDA0212A7C3E00B79B15 /* MovieDataFetcherList.h */,
+				74B9DD9D212A7C3E00B79B15 /* MovieDataFetcherList.m */,
+				74B9DD9F212A7C3E00B79B15 /* MovieMetaData.h */,
+				74B9DD9E212A7C3E00B79B15 /* MovieMetaData.m */,
 				74B9DD7D212A794C00B79B15 /* Info.plist */,
 			);
 			path = MovieProjectAPI;
@@ -86,6 +107,15 @@
 			path = MovieProjectAPITests;
 			sourceTree = "<group>";
 		};
+		74B9DD93212A799200B79B15 /* SortingStaticLib */ = {
+			isa = PBXGroup;
+			children = (
+				74B9DDAA212A875600B79B15 /* include */,
+				74B9DDAB212A875700B79B15 /* libSortingAlgo.a */,
+			);
+			path = SortingStaticLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +123,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9DDA3212A7C3E00B79B15 /* MovieMetaData.h in Headers */,
+				74B9DDA4212A7C3E00B79B15 /* MovieDataFetcherList.h in Headers */,
+				74B9DDA5212A84EC00B79B15 /* MovieConstants.h in Headers */,
 				74B9DD8A212A794C00B79B15 /* MovieProjectAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9DDAC212A875700B79B15 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9DDA1212A7C3E00B79B15 /* MovieDataFetcherList.m in Sources */,
+				74B9DDA2212A7C3E00B79B15 /* MovieMetaData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +383,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MovieProjectAPI/SortingStaticLib",
+					"$(PROJECT_DIR)/SortingStaticLib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = company.MovieProjectAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -369,6 +410,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MovieProjectAPI/SortingStaticLib",
+					"$(PROJECT_DIR)/SortingStaticLib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = company.MovieProjectAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
